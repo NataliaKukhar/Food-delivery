@@ -1,0 +1,103 @@
+@import "app";
+
+.phoneBlock {
+  width: 1050px;
+  margin: 0 auto;
+
+  h6 {
+    color: $color3;
+    @extend %textH6;
+  }
+
+  h3 {
+    color: $color1;
+    @extend %textH3;
+  }
+
+  p {
+    color: $color4;
+    @extend %textP;
+  }
+
+  .textBlock {
+    margin-top: 150px;
+  }
+}
+
+.shopBlock {
+  .imgPhone {
+    order: 2;
+  }
+}
+
+@media (max-width: 1060px) {
+  .phoneBlock {
+    width: 750px;
+    margin: 0 auto;
+
+    h6 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .textBlock {
+      margin-top: 100px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .phoneBlock {
+    width: 577px;
+    margin: 0 auto;
+
+    .textBlock {
+      margin-top: 50px;
+    }
+
+    h3 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+
+}
+
+@media (max-width: 1060px) {
+
+  .phoneBlock {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .login .imgPhone, .checkout .imgPhone {
+    order: 2;
+  }
+  h6, p, h3 {
+    text-align: center;
+  }
+  .phoneBlock {
+    h6, p {
+      font-size: 24px;
+      line-height: 38px;
+    }
+
+    h3 {
+      font-size: 40px;
+      line-height: 57px;
+    }
+  }
+  .phoneBlock {
+    width: 90%;
+  }
+}

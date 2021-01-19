@@ -1,0 +1,52 @@
+@import "app";
+
+.downloadBlock {
+  background-image: url("../img/backgroundFooter.png");
+  background-size: cover;
+}
+.downloadBlock {
+  color: $color2;
+
+  .downloadText, h3 {
+    text-align: center;
+  }
+
+  h3 {
+    padding-top: 145px;
+    @extend %textH3;
+  }
+  a {
+    padding: 18px 31px;
+    @extend %textA;
+  }
+  .btnRow {
+    margin-top: 40px;
+  }
+  .btn1 {
+    border-radius: 10px;
+  }
+  .btn2 {
+    border-radius: 10px;
+  }
+  .downloadText {
+    @extend %textP;
+  }
+}
+
+@media (max-width: 1100px) {
+  .downloadBlock a {
+    padding: 13px 23px;
+  }
+}
+@media (max-width: 770px) {
+  .downloadBlock {
+    background: #252B42;
+  }
+  h3 {
+    padding-top: 80px;
+  }
+
+  .downloadText{
+    color: #BDBDBD;
+  }
+}

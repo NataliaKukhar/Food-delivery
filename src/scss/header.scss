@@ -1,0 +1,174 @@
+@import "app";
+
+
+.headerBlock {
+  background-image: url("../img/background.png");
+  background-size: cover;
+}
+
+.headerBlock {
+  p {
+    @extend %textP;
+    margin-bottom: 54px;
+  }
+
+  h6 {
+    padding-top: 76px;
+    @extend %textH6;
+  }
+
+  h2 {
+    font-size: 58px;
+    line-height: 80px;
+    font-weight: bold;
+    margin-bottom: 27px;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p, h2, h6 {
+    text-align: center;
+    color: $color2;
+  }
+
+  a {
+    padding: 16px 58.5px;
+    @extend %textA;
+  }
+
+  .btn1 {
+    border-radius: 30px;
+
+    a {
+      color: $color2;
+    }
+  }
+
+  .btn2 {
+    border-radius: 30px;
+  }
+}
+
+.phonesHead {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phonesHead img {
+  position: relative;
+  top: -140px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.phonesHead::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #E4E4E4;;
+  display: inline-block;
+  position: relative;
+  left: 10%;
+  bottom: 50px;
+}
+
+@media (max-width: 1350px) {
+  .phonesHead img {
+    top: -100px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .headerBlock h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .phonesHead {
+    width: 40%;
+  }
+  .phonesHead img {
+    top: -70px;
+  }
+  .headerBlock a {
+    padding: 10px 35px;
+  }
+}
+
+@media (max-width: 770px) {
+  .phonesHead img {
+    position: relative;
+    top: -50px;
+  }
+  .headerBlock {
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    h6, p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+  }
+  h4 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .headerBlock {
+    background-image: none;
+  }
+  .headerBlock {
+    p, h6 {
+      color: $color4;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    h6 {
+      padding-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #252B42;;
+      font-size: 36px;
+      line-height: 42px;
+      width: 90%;
+    }
+
+    .btn2 {
+      border: 1px solid #FA4A0C;
+      box-sizing: border-box;
+      color: #FA4A0C;;
+    }
+
+  }
+  .phonesHead::after {
+    display: none;
+  }
+  .phonesHead{
+    width: 300px;
+  }
+  h4::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #E4E4E4;;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: 0px;
+  }
+
+}
